@@ -47,7 +47,7 @@ jobs:
       uses: azure/login@v1
       continue-on-error: false
       with:
-        creds: ${{ secrets.DEPLOYGITHUB }}
+        creds: ${{ secrets.MOHANAPPSECRET }}
 
     # Deploy Arm template
     - uses: actions/checkout@v2
